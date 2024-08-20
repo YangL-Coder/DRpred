@@ -1,20 +1,20 @@
 # DRpred
 ## Title:DRpred: A Novel Deep Learning-Based Predictor for Multi-Label mRNA Subcellular Localization Prediction by Incorporating Bayesian Inferred Prior Label Relationships
 The subcellular localization of messenger RNA (mRNA) not only helps to understand the local-ization regulation of gene expression, but also helps to understand the relationship between RNA localization pattern and human disease mechanism, which has profound biological and medical significance. Several predictors have been proposed for predicting the subcellular localization of mRNA. However, there is still considerable room for improvement in their predictive perfor-mance, especially regarding multi-label prediction. This study proposes a novel multi-label predictor, DRpred, for mRNA subcellular localization prediction. This predictor firstly utilizes Bayesian networks to capture the dependencies among labels. Subsequently, it combines these dependencies with features extracted from mRNA sequences using Word2vec, forming the input for the predictor. Finally, it employs a neural network combining BiLSTM and an attention mechanism to capture the internal relationships of input features for mRNA subcellular locali-zation. The experimental validation on an independent test set demonstrates that DRpred obtained competitive predictive performance in multi-label prediction and also outperformed state-of-the-art predictors in predicting single subcellular localizations, obtaining accuracy of 82.14%, 93.02%, 80.37%, 94.00%, 90.58%, 84.53%, 82.01%, 79.71%, and 85.67% for chromatin, cyto-plasm, cytosol, exosome, membrane, nucleolus, nucleoplasm, nucleus, and ribosome, respectively. It is anticipated to offer profound insights for biological and medical research
-.<div align=center>![image](![image](![image](https://github.com/user-attachments/assets/c133723f-af61-4e08-a55f-333bbeaeb07a)))</div>
-## mRCat uses the following dependencies:<br>
+.<div align=center>![image](![image](https://github.com/user-attachments/assets/d9ae70ba-652e-473c-91f2-61545637d005))</div>
+## DRpred uses the following dependencies:<br>
 python: 3.9<br>
 pandas: 1.4.4<br>
 sklearn: 1.0.2<br>
 numpy: 1.21.5<br>
-matplotlib: 3.4.3<br>
+PyTorch: 2.0.0<br>
 ## How to Use the Code in Jupyter (iPython) Notebooks:<br>
 1.Clone the Repository:<br>
   First, clone the repository to your local machine. Open your terminal or command prompt and run the following command:<br>
-  ```git clone https://github.com/YangL-Coder/mRCat.git```<br>
+  ```git clone https://github.com/YangL-Coder/DRpred.git```<br>
 2.Navigate to the Repository Directory:<br>
   Change the directory to the cloned repository:<br>
-  ```cd mRCat```<br>
+  ```cd DRpred```<br>
 3.Create a Virtual Environment:<br>
   It is recommended to create a virtual environment to manage dependencies. You can create a virtual environment using venv:<br>
  ```python3.9 -m venv venv```<br>
@@ -28,7 +28,7 @@ matplotlib: 3.4.3<br>
   pandas==1.4.4<br>
   sklearn==1.0.2<br>
   numpy==1.21.5<br>
-  matplotlib==3.4.3<br>
+  PyTorch==2.0.0<br>
 6.Install the Required Dependencies:<br>
   Install the required dependencies using the requirements.txt file:<br>
   ```pip install -r requirements.txt```<br>
