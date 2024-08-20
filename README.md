@@ -36,10 +36,5 @@ PyTorch: 2.0.0<br>
   ```jupyter notebook```<br>
 8.Navigate and Open the Notebook:<br>
   In the Jupyter Notebook interface, navigate to the directory where you cloned the repository. Open the notebook file (typically with a .ipynb extension) you want to work with.<br>
-## Guiding principles:<br>
-1.The folder "data" contains the datasets used in this study, including Training and Testing Set.The mRNA_sublocation_TrainingSet_NC-BERTdata.csv file in the TrainingSet folder is the sequence training set features. The mRNA_sublocation_TestSet_NC-BERTdata.csv file in the TestSet folder is the sequence test set features. The remaining csv files are the process data files for constructing the training set and the test set.<br>
-2.The folder "result" contains the results produced by the experimental process in this study.<br>
-3.IPYNB file, CV_violin_plots, DocProcess is the code for data preprocessing and visualization, mRNA_sublocation_TestSet_EIIP, mRNA_sublocation_TestSet-DNABERT, mRNA_sublocation_TrainingSet-DNABERT, mRNA_sublocation_TrainingSet_EIIP are the codes for feature extraction of sequences,and the remaining IPYNB files focus on training models by combining various features with different base classifiers.<br>
-4.When using mRNA_sublocation_TrainingSet_DNABERT_data.csv and mRNA_sublocation_TrainingSet_NC-BERTdata.csv, you need to extract the CSV files from the mRNA_sublocation_TrainingSet_DNABERT_data.zip and mRNA_sublocation_TrainingSet_NC-BERTdata.zip archives into the data/TrainingSet folder.<br>
 ## Note:<br>
-This code is for the article 'mRCat: a Novel CatBoost Predictor for Binary Classification of mRNA Subcellular Localization by Fusing Large Language Model Representation and Sequence Features'.
+This code is for the article 'DRpred: A Novel Deep Learning-Based Predictor for Multi-Label mRNA Subcellular Localization Prediction by Incorporating Bayesian Inferred Prior Label Relationships'.
